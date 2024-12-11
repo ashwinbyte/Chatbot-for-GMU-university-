@@ -1,0 +1,210 @@
+[
+    {
+        "intent": "transcript",
+        "keywords": ["transcript", "official transcript", "academic record", "student transcript", "transcripts", "transkript", "trnascript", "transcrpt", "acadamic record", "record of grades"],
+        "link": "https://registrar.gmu.edu/students/transcripts/",
+        "popularity": 0,
+        "description": "Get information about official and unofficial transcripts.",
+        "summary": "This registrar link related to transcript will provide information related to dean and directiors information, patriot web tutorials, registration, degree evaluation, transcripts and many more acadamic relevant information."
+    },
+    {
+        "intent": "degree planning",
+        "keywords": ["degree planning", "course planning", "academic advisor", "degree plan", "academic schedule", "class planning", "degree progression", "degre planing", "degree shedule", "advising apointments"],
+        "link": "https://advising.gmu.edu/",
+        "popularity": 0,
+        "description": "Plan your academic degree with advisors and tools.",
+        "summary": "Provides advising information such as mason student resources and other facilities, adivising for different background."
+    },
+    {
+        "intent": "library resources",
+        "keywords": ["library", "books", "research", "library hours", "study rooms", "libary", "studyroom", "ebooks", "journals", "lib resources", "library catalog", "referance materials"],
+        "link": "https://library.gmu.edu/",
+        "popularity": 0,
+        "description": "Access library resources, study rooms, and research materials.",
+        "summary": "Information for library along with timings of different libraries throught the campus and policies and also access to QA related to library queries."
+    },
+    {
+        "intent": "financial aid",
+        "keywords": ["financial aid", "scholarships", "loans", "student aid", "tuition help", "fianancial aid", "finacial support", "finacial help", "grants", "FAFSA", "work-study", "studant aid"],
+        "link": "https://financialaid.gmu.edu/",
+        "popularity": 0,
+        "description": "Find details about financial aid, scholarships, and FAFSA.",
+        "summary": "Know how can you apply for financial aid based on your requirements and understand the process by going through the link. Also provides information on types of aid, types of students, and contact informations."
+    },
+    {
+        "intent": "parking",
+        "keywords": ["parking", "parking pass", "campus parking", "student parking", "parkng", "parking permits", "visitor parking", "parking fees", "car parking"],
+        "link": "https://transportation.gmu.edu/parking/",
+        "popularity": 0,
+        "description": "Learn about campus parking options and permits.",
+        "summary": "Know about transportation within and outside the campus, parking information, rules and regulations and timings for parking services informations. Also guidance on how to register for the parking."
+    },
+    {
+        "intent": "housing",
+        "keywords": ["housing", "dorms", "campus housing", "roommate", "student housing", "hostel", "residence halls", "off-campus housing", "housing aplications", "roomates", "dormitory"],
+        "link": "https://housing.gmu.edu/",
+        "popularity": 0,
+        "description": "Explore student housing options, both on-campus and off-campus.",
+        "summary": "The link to this resource provides information regarding the housing and residency for the students at GMU. It provides all the information regarding the housing and important policies and also important dates and contact informations."
+    },
+    {
+        "intent": "student health services",
+        "keywords": ["health", "clinic", "medical", "doctor", "student health", "mental health", "counseling", "wellness", "health insurance", "vaccinations", "helth services", "stdent health", "stundent clinic"],
+        "link": "https://shs.gmu.edu/",
+        "popularity": 0,
+        "description": "Access student health services, including counseling and clinics.",
+        "summary": "Know everything about student healthcare services - Appointments, patient portal, SHS forms, events/news, office hours, emergency contact information and many more related to the student's healthcare."
+    },
+    {
+        "intent": "career services",
+        "keywords": ["jobs", "career", "internship", "employment", "resume", "carear services", "job searching", "career fair", "job opportunities", "interview preparation", "career counceling"],
+        "link": "https://careers.gmu.edu/",
+        "popularity": 0,
+        "description": "Find career guidance, job opportunities, and internship resources.",
+        "summary": "Explore career options and known about how to enhance you career with a helping hand from GMU. Have information regarding how to craft resumes, cover letters, how to prepare for interviews, networking and other relevant topics. Information of 'Handshake' for applying and getting information for jobs."
+    },
+    {
+        "intent": "course catalog",
+        "keywords": ["courses", "catalog", "classes", "subjects", "curriculum", "course listings", "class schedule", "programs", "course catelog", "clas schedule", "curriculm"],
+        "link": "https://catalog.gmu.edu/",
+        "popularity": 0,
+        "description": "Browse the course catalog for classes, programs, and curriculam.",
+        "summary": "Get to know about courses of different programs offered by George Mason University"
+    },
+    {
+        "intent": "tuition and fees",
+        "keywords": ["tuition", "fees", "cost of attendance", "payment", "student bills", "tuition deadlines", "payment plan", "tution", "fees schedule", "student bill", "tution costs"],
+        "link": "https://studentaccounts.gmu.edu/",
+        "popularity": 0,
+        "description": "Get details about tuition, fees, and payment options.",
+        "summary": "Accounts information for students, information of different methods of payment, billing information, contact information and deadline for each semester."
+    },
+    {
+        "intent": "campus map",
+        "keywords": ["map", "campus", "directions", "buildings", "locations", "campus layout", "navigation", "find classroom", "campas map", "campas directions", "campuss"],
+        "link": "https://info.gmu.edu/campus-maps/",
+        "popularity": 0,
+        "description": "Navigate campus with maps and building locations.",
+        "summary": "Provides information for visitors with different campus maps, virtually, timings, and many more."
+    },
+    {
+        "intent": "academic calendar",
+        "keywords": ["academic calendar", "schedule", "semester dates", "holidays", "important dates", "exam schedule", "registration deadlines", "acadamic calendar", "acadmic holidays", "semestar dates"],
+        "link": "https://registrar.gmu.edu/calendars/",
+        "popularity": 0,
+        "description": "View the academic calendar with semester dates and holidays.",
+        "summary": "Get academic calendar and final exam schedules for each semester throughout the year."
+    },
+    {
+        "intent": "IT support",
+        "keywords": ["IT support", "tech help", "technology", "password reset", "wifi", "email support", "Blackboard issues", "software access", "computer labs", "IT suport", "tecnology support", "Wi-Fi", "passward reset"],
+        "link": "https://its.gmu.edu/",
+        "popularity": 0,
+        "description": "Find IT support for tech issues, Wi-Fi, and password resets.",
+        "summary": "Information regarding any technical issues or queries. Provide information about different resources provided by George Mason University."
+    },
+    {
+        "intent": "student organizations",
+        "keywords": ["clubs", "student organizations", "activities", "student life", "events", "campus involvement", "organizations", "student groups", "club meetings", "campus activities", "student organiztions"],
+        "link": "https://si.gmu.edu/",
+        "popularity": 0,
+        "description": "Get involved in campus life with student organizations and clubs.",
+        "summary": "\"Get involved today\" - student involvment information. Different events and counciling held by and for students at George Mason University."
+    },
+    {
+        "intent": "mental health resources",
+        "keywords": ["mental health", "counseling", "stress management", "therapy", "mental wellness", "support groups", "student mental health", "mentel health", "counseling services", "stress managment", "theropy"],
+        "link": "https://caps.gmu.edu/",
+        "popularity": 0,
+        "description": "Access mental health support, counseling, and wellness resources.",
+        "summary": "This link provides information for counseling and psychological servies along with timings and procedure for registration for the session."
+    },
+    {
+        "intent": "recreation and fitness",
+        "keywords": ["gym", "fitness", "recreation", "sports", "intramurals", "exercise", "campus gym", "recreation center", "fitness classes", "rec center", "recreation and fitnes", "intrmurals"],
+        "link": "https://recreation.gmu.edu/",
+        "popularity": 0,
+        "description": "Discover campus fitness and recreation activities, including sports.",
+        "summary": "Resource to known each and every information regarding fitness by GMU. Information for different gym and outdoor activites along with timings for each."
+    },
+    {
+        "intent": "study abroad",
+        "keywords": ["study abroad", "international programs", "exchange programs", "overseas studies", "global education", "study abraod", "exchange prgrams", "overseas education", "abroad studies"],
+        "link": "https://studyabroad.gmu.edu/",
+        "popularity": 0,
+        "description": "Learn about study abroad programs and international opportunities.",
+        "summary": "Thie page contains information regarding different study abroad programs offered by George Mason University and how to get enrolled in it."
+    },
+    {
+        "intent": "alumni services",
+        "keywords": ["alumni", "alumni events", "career networking", "alumni benefits", "stay connected", "giving back", "alumini", "alumini events", "career network", "alumni benifits"],
+        "link": "https://alumni.gmu.edu/",
+        "popularity": 0,
+        "description": "Stay connected with GMU through alumni services and events.",
+        "summary": "Connect with alumni of George Mason University and known more about them by visiting this page."
+    },
+    {
+        "intent": "emergency services",
+        "keywords": ["emergency", "campus safety", "police", "security", "emergency contact", "crime reporting", "alerts", "emergancy services", "campas safety", "emergency alerts", "poliece"],
+        "link": "https://police.gmu.edu/",
+        "popularity": 0,
+        "description": "Find emergency contact information and campus safety resources.",
+        "summary": "Provide IMPORTANT information regarding public safety and police information and contacts."
+    },
+    {
+        "intent": "patriot web",
+        "keywords": ["patriot web", "course registration", "registration", "Registration Fee Assessment", "Registration and Planning", "register for classes", "registration information"],
+        "link": "https://patriotweb.gmu.edu",
+        "popularity": 0,
+        "description": "a self-service site for students, faculty, and staff to manage their administrative records and accounts",
+        "summary": "Explore career options and known about how to enhance you career with a helping hand from GMU. Have information regarding how to craft resumes, cover letters, how to prepare for interviews, networking and other relevant topics. Information of 'Handshake' for applying and getting information for jobs."
+    },
+    {
+        "intent": "Blackboard",
+        "keywords": ["grades", "course", "assignments", "syllabus and courese schedule", "textbook links", "course evaluation", "office hours"],
+        "link": "https://mymasonportal.gmu.edu",
+        "popularity": 0,
+        "description": "a web-based virtual learning environment and learning management system",
+        "summary": "This is a portal which is used by students and every professionals regarding their information."
+    },
+    {
+        "intent": "canvas",
+        "keywords": ["grades", "course", "assignments", "syllabus and courese schedule", "textbook links", "course evaluation", "office hours"],
+        "link": "https://canvas.gmu.edu",
+        "popularity": 0,
+        "description": "a web-based virtual learning environment and learning management system",
+        "summary": "Application used by many instructors for providing their course material and assignments."
+    },
+    {
+        "intent": "shuttle",
+        "keywords": ["bus", "transport", "shuttle", "massion shuttle"],
+        "link": "http://www.mason.ridesystems.net/routes",
+        "popularity": 0,
+        "description": "a type of vehicle designed to transport passengers over short distances, often traveling between specific locations in a loop",
+        "summary": "Application used to known about timings and other important information regarding Mason Shuttle."
+    },
+    {
+        "intent": "virtual assistance",
+        "keywords": ["mymasion", "masion", "virtual document submission", "document dropoff"],
+        "link": "https://mssc.gmu.edu/mssc-virtual-services/",
+        "popularity": 0,
+        "description": "Student Services Center",
+        "summary": "Get information regarding a virtual assistance by submiting online forms and documents. Visit the page to get more information"
+    },
+    {
+        "intent": "greeting",
+        "keywords": ["hi", "how are you?", "where are you working", "who created you ? ", "hello good morning", "hi good evening", "good afternoon", "where are you from"],
+        "link": "",
+        "popularity": 0,
+        "description": "Hi I am a chatbot version-1 created by some great students (i think they are only 4 of them) for providing you the information regarding George Mason University.",
+        "summary": ""
+    },
+    {
+        "intent": "goodby",
+        "keywords": ["bye", "I am leaving", "i should go now", "goodbye "],
+        "link": "",
+        "popularity": 0,
+        "description": "Bye! Have a great time.😊",
+        "summary": ""
+    }
+]
