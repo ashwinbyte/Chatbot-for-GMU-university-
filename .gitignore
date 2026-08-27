@@ -1,0 +1,53 @@
+# Environment — NEVER commit these
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Generated data — large files, recreated by scripts
+data/chroma_db/
+data/analytics.json
+scraped_content/
+
+# Logs
+*.log
+chatbot.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+__pycache__/
+*.pyc
+*.pyo
+
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.log
+node_modules/
+dist/
+.DS_Store
+.vscode/
