@@ -30,9 +30,9 @@ class ChatResponse(BaseModel):
 
 @router.post("/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest):
-    from backend.app.services.rag       import semantic_rag_response, is_rag_enabled
-    from backend.app.services.analytics import PopularityTracker, log_query
-    from backend.app.services.responder import format_help
+    from app.services.rag       import semantic_rag_response, is_rag_enabled
+    from app.services.analytics import PopularityTracker, log_query
+    from app.services.responder import format_help
 
     TRACKER = PopularityTracker(str(BASE / "data" / "analytics.json"))
     message = request.message.strip()

@@ -11,8 +11,9 @@ except ImportError:
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.app.routes.chat  import router as chat_router
-from backend.app.routes.stats import router as stats_router
+
+from app.routes.chat  import router as chat_router
+from app.routes.stats import router as stats_router
 
 app = FastAPI(
     title       = "GMU Resource Chatbot API",
@@ -34,8 +35,8 @@ app.include_router(stats_router)
 
 @app.get("/")
 async def health():
-    from backend.app.services.rag        import is_rag_enabled
-    from backend.app.services.embeddings import is_vector_db_ready
+    from app.services.rag        import is_rag_enabled
+    from app.services.embeddings import is_vector_db_ready
     return {
         "status":       "online",
         "version":      "3.0.0",
@@ -52,4 +53,4 @@ if __name__ == "__main__":
     print(f"  Running on: http://localhost:{port}")
     print(f"  API docs:   http://localhost:{port}/docs")
     print(f"{'='*50}\n")
-    uvicorn.run("backend.app.main:app", host="0.0.0.0", port=port, reload=True)
+    uvicorn.run("app.main:app", host="0.0.0.0", port=port, reload=True)

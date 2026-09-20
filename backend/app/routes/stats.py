@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from pathlib import Path
-from backend.app.services.analytics import PopularityTracker
+from app.services.analytics import PopularityTracker
 
 router  = APIRouter()
 BASE    = Path(__file__).parent.parent.parent

@@ -62,7 +62,7 @@ export function useChat() {
         greetingShown.current = true
         checkHealth().then(h => setRagEnabled(h.rag_enabled)).catch(() => {})
         addMessage("bot", {
-            response: "Hi there! 👋 I am the GMU Resource Assistant. Ask me anything about campus resources — financial aid, housing, health services, careers, transcripts, and more!",
+            response: "Hi there! 👋 I am the GMU Resource Assistant. Ask me anything about campus resources like financial aid, housing, health services, careers, transcripts, and more!",
             link: null, rag_used: false
         })
     }, [addMessage])

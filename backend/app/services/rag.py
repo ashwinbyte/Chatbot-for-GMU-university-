@@ -41,7 +41,7 @@ def _call_llm(prompt: str) -> str | None:
         return None
     try:
         response = _groq_client.chat.completions.create(
-            model       = "llama-3.3-70b-versatile",
+            model       = "openai/gpt-oss-120b",
             messages    = [{"role": "user", "content": prompt}],
             max_tokens  = 500,
             temperature = 0.7
@@ -60,7 +60,7 @@ def generate_rag_response(user_query: str, matched_entry: dict) -> str | None:
 
     scraped_context = ""
     try:
-        from src.embeddings import find_similar_chunks, is_vector_db_ready
+        from app.services.embeddings import find_similar_chunks, is_vector_db_ready
         if is_vector_db_ready():
             chunks = find_similar_chunks(user_query, n_results=3)
             if chunks:
@@ -101,7 +101,7 @@ def conversational_fallback(user_query: str, database: list) -> str | None:
 
     scraped_context = ""
     try:
-        from src.embeddings import find_similar_chunks, is_vector_db_ready
+        from app.services.embeddings import find_similar_chunks, is_vector_db_ready
         if is_vector_db_ready():
             chunks = find_similar_chunks(user_query, n_results=3)
             if chunks:
@@ -135,7 +135,7 @@ async def semantic_rag_response(user_query: str, database: list) -> dict:
     detected_link   = None
 
     try:
-        from src.embeddings import find_similar_chunks, is_vector_db_ready
+        from app.services.embeddings import find_similar_chunks, is_vector_db_ready
         if is_vector_db_ready():
             chunks = find_similar_chunks(user_query, n_results=5)
             if chunks:
@@ -147,6 +147,20 @@ async def semantic_rag_response(user_query: str, database: list) -> dict:
                         break
     except Exception as e:
         print(f"Vector search error: {e}")
+
+    if not relevant_chunks or relevant_chunks[0]["similarity"] < 0.6:
+        return {
+            "response": (
+                "I don't have specific information on that yet. "
+                "Try rephrasing, or check the official GMU website. "
+                "I can help with topics like financial aid, housing, "
+                "transcripts, health services, careers, and more."
+            ),
+            "intent": "low_confidence",
+            "confidence": round(relevant_chunks[0]["similarity"] * 100, 1) if relevant_chunks else 0.0,
+            "link": None,
+            "rag_used": False,
+        }
 
     if relevant_chunks:
         scraped_context = "\n\n".join([
