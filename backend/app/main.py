@@ -11,9 +11,9 @@ except ImportError:
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-
 from app.routes.chat  import router as chat_router
 from app.routes.stats import router as stats_router
+from app.routes.auth import router as auth_router
 
 app = FastAPI(
     title       = "GMU Resource Chatbot API",
@@ -32,6 +32,7 @@ app.add_middleware(
 
 app.include_router(chat_router)
 app.include_router(stats_router)
+app.include_router(auth_router) 
 
 @app.get("/")
 async def health():

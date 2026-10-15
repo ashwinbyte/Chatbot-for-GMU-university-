@@ -101,7 +101,7 @@ def conversational_fallback(user_query: str, database: list) -> str | None:
 
     scraped_context = ""
     try:
-        from app.services.embeddings import find_similar_chunks, is_vector_db_ready
+        from src.embeddings import find_similar_chunks, is_vector_db_ready
         if is_vector_db_ready():
             chunks = find_similar_chunks(user_query, n_results=3)
             if chunks:
@@ -135,7 +135,7 @@ async def semantic_rag_response(user_query: str, database: list) -> dict:
     detected_link   = None
 
     try:
-        from app.services.embeddings import find_similar_chunks, is_vector_db_ready
+        from src.embeddings import find_similar_chunks, is_vector_db_ready
         if is_vector_db_ready():
             chunks = find_similar_chunks(user_query, n_results=5)
             if chunks:
@@ -148,6 +148,8 @@ async def semantic_rag_response(user_query: str, database: list) -> dict:
     except Exception as e:
         print(f"Vector search error: {e}")
 
+
+#Confidence gate
     if not relevant_chunks or relevant_chunks[0]["similarity"] < 0.6:
         return {
             "response": (
