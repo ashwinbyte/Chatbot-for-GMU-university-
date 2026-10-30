@@ -9,4 +9,4 @@ class User(Base):
     id            = Column(BigInteger, primary_key=True)
     email         = Column(String, unique=True, nullable=False)
     password_hash = Column(String, nullable=False)
-    created_at    = Column(DateTime(timezone=True), server_default=func.now())
+    date_created = Column(DateTime(timezone=True), server_default=func.now())
