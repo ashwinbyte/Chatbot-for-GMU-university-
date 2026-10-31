@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
-from jose import jwt
+from jose import JWTError, jwt
 from passlib.context import CryptContext
 
 # .env lives at the project root, this file is 3 folders deeper
@@ -35,3 +35,10 @@ def create_access_token(user_id):
         JWT_SECRET,
         algorithm=ALGORITHM,
     )
+
+def read_user_id(token):
+    try:
+        payload = jwt.decode(token, JWT_SECRET, algorithms=[ALGORITHM])
+        return int(payload["sub"])
+    except (JWTError, KeyError, ValueError):
+        return None
